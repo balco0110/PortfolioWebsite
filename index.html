@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="view-transition" content="same-origin" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/bc14c1c223.js" crossorigin="anonymous"></script>
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <main>
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="images/hero-image.jpeg" alt="avatar" class="avatar" width="100">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Blagoja Mojsoski">Blagoja Mojsoski</h1>
+                    <p class="title">Fullstack Developer</p>
+                    <a href="assets/Lebenslauf- Blagoja Mojsoski.pdf" download="" class="download-cv">
+                        Download CV <ion-icon name="arrow-down-outline"></ion-icon>
+                    </a>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Info</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+                <ul class="contact-list">
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email:</p>
+                            <a href="mailto:mojsoski93@gmail.com" class="contact-link">mojsoski93@gmail.com</a>
+                        </div>
+
+
+
+                    </li>
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone:</p>
+                            <a href="tel: +491722624127" class="contact-link">01722624127</a>
+                        </div>
+
+
+
+                    </li>
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+                            <time datetime="1993-10-01">October 1, 1993</time>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Worms, Germany</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/blagoja-mojsoski-7b1b3b1b1/" class="social-link"
+                            target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.github.com/" class="social-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.xing.com/" class="social-link" target="_blank">
+                            <ion-icon name="logo-xing"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <div class="main-content">
+
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About Me</h2>
+                    <!-- <div class="language-switch">
+                        <button class="lang-btn" id="english-btn">English</button>
+                        <button class="lang-btn" id="german-btn">German</button>
+                    </div> -->
+                </header>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Profile</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="">
+                            <p class="timeline-text">I am a dedicated and enthusiastic individual with a passion for
+                                software development. I excel in dynamic environments and enjoy tackling challenging
+                                problems. With a strong foundation in programming languages such as C# and JavaScript,
+                                along with experience developing web applications, I am committed to delivering
+                                high-quality solutions that meet clients' needs and exceed expectations.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">University of Information Science and Technology "St.
+                                Paul the Apostle"</h4>
+                            <span>2012-2017</span>
+                            <p class="timeline-text">During my studies at UIST, I immersed myself in the world of
+                                information science and technology. The university provided a rich learning environment
+                                where I gained valuable knowledge and skills that laid the foundation for my career in
+                                the field.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Seavus</h4>
+                            <span>2016-2017</span>
+                            <p class="timeline-text">During my time at Seavus, I had the opportunity to work extensively
+                                on front-end development using cutting-edge web technologies such as HTML5, CSS3, and
+                                JavaScript. With support from experienced mentors, I developed modern web pages and
+                                applications. Additionally, I worked with the ASP.NET Web Development Frameworks, MVC,
+                                and other MV* design patterns. I gained hands-on experience with relational and
+                                non-relational database management systems like Microsoft SQL and MongoDB. Furthermore,
+                                I deepened my understanding of OOP concepts and programming languages, primarily
+                                focusing on C#. I also acquired knowledge of cloud computing concepts, including Azure,
+                                and gained insights into IaaS, PaaS, and SaaS principles in the cloud computing
+                                paradigm. Overall, I acquired the necessary skills to work as a full-stack web
+                                developer, proficient in both front-end and back-end programming.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Software Developer</h4>
+                            <span>Aliru - November 2022 - Present</span>
+                            <p class="timeline-text">Engaged in customizing and developing C# plugins, as well as
+                                managing frontend logic using JavaScript for Microsoft Dynamics 365 systems. Within this
+                                role, I refined my skills in implementing and refining CI/CD pipelines, along with
+                                proficiency in utilizing GraphQL.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Postman</h4>
+                            <span>Deutsche Post AG - February 2019 - November 2022</span>
+                            <p class="timeline-text">Responsible for efficiently delivering mail and parcels to
+                                designated addresses within
+                                the assigned area. Demonstrated strong organizational skills and attention to detail to
+                                ensure accurate and timely deliveries.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Web Developer</h4>
+                            <span>Entire Logic - March 2018 - July 2019</span>
+                            <p class="timeline-text">Focused on crafting websites using the MVC model with .NET,
+                                JavaScript, HTML, CSS, and SQL. Responsible for designing and implementing robust,
+                                scalable web applications to deliver exceptional user experiences.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Internship Web Development</h4>
+                            <span>Entire Logic - December 2017 - March 2018</span>
+                            <p class="timeline-text">Collaborated closely with the development team on a variety of
+                                projects.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Internship Web Development</h4>
+                            <span>Seavus - September 2017 - October 2017</span>
+                            <p class="timeline-text">Contributed to the development and implementation of a responsive
+                                website using HTML, CSS, and JavaScript.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">
+                        <div class="icon-box">
+                            <ion-icon name="hammer-outline"></ion-icon>
+                        </div>
+                        Skill set
+                    </h3>
+
+                    <ul class="skills-list content-card">
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h4 class="h3 skills-item-title">HTML</h4>
+                                <div class="icon-box">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h4 class="h3 skills-item-title">CSS</h4>
+                                <div class="icon-box">
+                                    <ion-icon name="logo-css3"></ion-icon>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h4 class="h3 skills-item-title">JavaScript</h4>
+                                <div class="icon-box">
+                                    <ion-icon name="logo-javascript"></ion-icon>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h4 class="h3 skills-item-title">Typescript</h4>
+                                <div class="icon-box">
+                                    <img src="images/typescript.svg" alt="typescript" class="icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h4 class="h3 skills-item-title">C#</h4>
+                                <div class="icon-box">
+                                    <img src="images/csharp.svg" alt="csharp" class="icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h4 class="h3 skills-item-title">.Net</h4>
+                                <div class="icon-box">
+                                    <img src="images/dotnet.svg" alt="csharp" class="icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h4 class="h3 skills-item-title">GraphQL</h4>
+                                <div class="icon-box">
+                                    <img src="images/graphql.svg" alt="csharp" class="icon">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="portfolio">
+
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>HTML-CSS</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>HTML-CSS-JS</button>
+                        </li>
+                        <!-- <li class="filter-item">
+                            <button data-filter-btn>JS</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>C#/.NET</button>
+                        </li> -->
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-select-value>Select category</div>
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item" data-select-item>
+                                <button data-select-item>All</button>
+                            </li>
+                            <li class="select-item" data-select-item>
+                                <button data-select-item>HTML-CSS</button>
+                            </li>
+                            <li class="select-item" data-select-item>
+                                <button data-select-item>HTML-CSS-JS</button>
+                            </li>
+                            <!-- <li class="select-item" data-select-item>
+                                <button data-select-item>JS</button>
+                            </li>
+                            <li class="select-item" data-select-item>
+                                <button data-select-item>C#/.NET</button>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="html-css-js">
+                            <a href="https://balco0110.github.io/Bankist/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-1.png" alt="project1" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Bankist</h3>
+                                <p class="project-category">Html-CSS-JS</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="html-css-js">
+                            <a href="https://balco0110.github.io/BankApp/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-2.png" alt="project2" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">E-Gringotts</h3>
+                                <p class="project-category"> user: hp, pass: 1111</p>
+                                <p class="project-category">Html-CSS-JS</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="html-css">
+                            <a href="https://balco0110.github.io/Results-summary-component/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-3.png" alt="project3" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Result summary component</h3>
+                                <p class="project-category">HTML-CSS</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="html-css-js">
+                            <a href="https://balco0110.github.io/Pokedex/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-4.png" alt="project4" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Pokedex</h3>
+                                <p class="project-category">HTML-CSS-JS</p>
+                            </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="html-css">
+                            <a href="https://balco0110.github.io/Manage-landing-page/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-6.png" alt="project5" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Landing page</h3>
+                                <p class="project-category">HTML-CSS</p>
+                            </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="html-css-js">
+                            <a href="https://balco0110.github.io/PigGame/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-5.png" alt="project6" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Pig Game</h3>
+                                <p class="project-category">HTML-CSS-JS</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+            </article>
+
+            <article class="contact" data-page="contact">
+                <header class="h2 article-title">Contact</header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82644.12211456406!2d8.25978415794373!3d49.66129276545309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47962bc14f284789%3A0x422d4d510db1be0!2sWorms!5e0!3m2!1sen!2sde!4v1713245992876!5m2!1sen!2sde"
+                            width="400" height="300" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title">Contact form</h3>
+
+                    <form action="#" class="form" data-form>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" id="fullname" class="form-input" placeholder="Full name"
+                                required data-form-input>
+                            <input type="email" name="email" id="email" class="form-input" placeholder="E-mail address"
+                                required data-form-input>
+                        </div>
+
+                        <textarea name="message" id="message" class="form-input" placeholder="Your Message" required
+                            data-form-input></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+
+                    </form>
+                </section>
+            </article>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
